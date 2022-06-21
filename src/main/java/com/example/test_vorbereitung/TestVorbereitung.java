@@ -6,4 +6,10 @@ public class TestVorbereitung {
     {
         return a*a;
     }
+
+    public double fahrenheit(double f)
+    {
+        return ((f-32)*(5/9d));
+    }
+
 }
