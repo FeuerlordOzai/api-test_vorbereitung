@@ -1,7 +1,10 @@
 package com.example.test_vorbereitung;
 
+import java.util.HashMap;
+
 public class TestVorbereitung {
 
+    HashMap<String,String> LookUp = new HashMap<>(){{put("Austria","Vienna");put("Spain","Madrid");put("Germany","Berlin");}};
     public int square(int a)
     {
         return a*a;

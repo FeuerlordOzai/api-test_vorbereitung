@@ -10,7 +10,8 @@ import java.util.HashMap;
 @RestController
 public class TestVorbereitungContoller {
 
-    HashMap<String,String> LookUp = new HashMap<>(){{put("Austria","Vienna");put("Spain","Madrid");put("Deutschland","Berlin");}};
+
+
     TestVorbereitung t = new TestVorbereitung();
 
     @RequestMapping("/square")
@@ -28,7 +29,7 @@ public class TestVorbereitungContoller {
     @RequestMapping("/capital")
     public String capital(@RequestParam String c)
     {
-        return LookUp.get(c);
+        return t.LookUp.get(c);
     }
 
 }
